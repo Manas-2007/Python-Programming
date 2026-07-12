@@ -45,8 +45,6 @@ class Bank:
                 break;
             else:
                 print("Incorrect Pin...Try again");
-                
-                
     def Information(self):
         self.Pin_Check();
         print("Username :",self.username);

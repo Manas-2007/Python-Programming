@@ -26,3 +26,4 @@ class Electric_Car(Car):
 # Creating object
 my_Electric=Electric_Car("Ola","Scooty","400 volt");
 my_Electric.Display();
+print("Brand of the Car is",my_Electric.brand)
