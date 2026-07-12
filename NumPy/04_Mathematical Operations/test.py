@@ -21,3 +21,12 @@ print(f"Division :\n{x/y}")
 print(f"Floor Division :\n{x//y}")
 print(f"Exponent :\n{x**y}")
 
+# 2D array (Scalar Operation)
+items=np.array([[1,2,3,4],[5,6,7,8]])
+items+=100;
+print("Add :\n",items)
+items=np.array([[1,2,3,4],[5,6,7,8]])
+print("Exponenent :\n",items**2)
+items=np.array([[1,2,3,4],[5,6,7,8]])
+print("Multiply :\n",items*5)
+
