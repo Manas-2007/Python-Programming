@@ -14,4 +14,19 @@ print(f"Original Matrix :\n {matrix}\nAfter Transpose :\n{matrix.T}")
 zero_Matrix=np.zeros((3,4))
 one_Matrix=np.ones((3,4))
 scalar_Matrix=np.full((3,4),8)
-print(f"Zero Matrix :\n{zero_Matrix}\nOne Matrix :\n {one_Matrix}\nScalar Matrix :\n{scalar_Matrix}")
+print(f"Zero Matrix :\n{zero_Matrix}\nOne Matrix :\n {one_Matrix}\nScalar Matrix :\n{scalar_Matrix}\n\n")
+
+# Flattened and Ravelled Method
+    # 1.array.flatten()   ->   Creates a Copy and convert to 1D
+flat_array=matrix.flatten()
+flat_array[2]=5000
+print("Flatten Array :\n",flat_array)
+print("Original Matrix :\n",matrix,"\n\n")
+
+
+    # array.ravel()       ->   Returns a view and convert to 1D (NO COPY)
+ravel_array=matrix.ravel()
+ravel_array[2]=5000
+print("Ravelled Array :\n",ravel_array)
+print("Original Matrix :\n",matrix)
+print("Transpose of New Matrix :\n",matrix.T)
